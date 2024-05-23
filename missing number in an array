@@ -1,0 +1,9 @@
+n = int(input("Enter the size of the array: "))
+print("Enter {} elements:".format(n - 1))
+arr = list(map(int, input().split()))
+
+total = (n * (n + 1)) // 2
+array_sum = sum(arr)
+missing_number = total - array_sum
+
+print("The missing number is:", missing_number)
