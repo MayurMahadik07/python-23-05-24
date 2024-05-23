@@ -1,0 +1,9 @@
+size = int(input("Enter the array size: "))
+print("Input {} elements in an array:".format(size))
+arr = list(map(int, input().split()))
+
+unique_elements = set(arr)
+
+print("The unique elements found in the array are:")
+for element in unique_elements:
+    print(element, end=" ")
