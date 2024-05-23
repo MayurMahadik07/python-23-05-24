@@ -1,0 +1,22 @@
+size1 = int(input("Enter the size of the first array: "))
+size2 = int(input("Enter the size of the second array: "))
+
+print("Enter {} elements for the first array:".format(size1))
+arr1 = list(map(int, input().split()))
+
+print("Enter {} elements for the second array:".format(size2))
+arr2 = list(map(int, input().split()))
+
+if size1 != size2:
+    print("Arrays are different: Sizes are different")
+else:
+    are_different = False
+    for i in range(size1):
+        if arr1[i] != arr2[i]:
+            are_different = True
+            break
+
+    if are_different:
+        print("Arrays are different: Elements are different")
+    else:
+        print("Arrays are the same")
