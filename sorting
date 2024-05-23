@@ -1,0 +1,7 @@
+size = int(input("Enter the size of the array: "))
+print("Enter {} elements:".format(size))
+arr = list(map(int, input().split()))
+arr.sort()
+print("Sorted array in ascending order:")
+for element in arr:
+    print(element, end=" ")
