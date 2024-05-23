@@ -1,0 +1,5 @@
+size = int(input("Enter the size of the array: "))
+print("Enter {} elements:".format(size))
+arr = list(map(int, input().split()))
+sum_of_elements = sum(arr)
+print("Sum of elements:", sum_of_elements)
